@@ -7,12 +7,12 @@ const Whoiam = () => {
     }
 
     return <div className={"bg-primary p-2 m-2"}>
-        <div className="row p-2 text-center">
-            <div className="col col-md-4">
+        <div className="row p-2 text-center justify-content-center">
+            <div className="col col-md-3">
                 <img src="https://res.cloudinary.com/dzgnrldzj/image/upload/v1644192503/develop/perf_syikjh.jpg"
                      alt="profile image" width={"200"} className={"border border-success rounded"}/>
             </div>
-            <div className="col col-md-8 align-self-center">
+            <div className="col col-md-5 align-self-center">
                 <h3>
                     Domingo Funez, <br/>
                     <span className={"text-muted h6"}>
