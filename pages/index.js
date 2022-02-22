@@ -16,11 +16,11 @@ const Home = () => {
             </Head>
             <main className={"bg-success"}>
                 <section>
-                    <Whoiam></Whoiam>
-                    <Skills></Skills>
+                    <Whoiam/>
+                    <Skills/>
                 </section>
                 <footer>
-                    <CvDownloader></CvDownloader>
+                    <CvDownloader/>
                 </footer>
             </main>
         </div>
