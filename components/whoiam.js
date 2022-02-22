@@ -1,11 +1,6 @@
+import Email from "./email";
+
 const Whoiam = () => {
-
-    const email = () => {
-        navigator.clipboard.writeText("domingofunez99@gmail.com").then(() =>
-            alert("Mail Copied To Clipboard.")
-        )
-    }
-
     return <div className={"bg-primary p-2 m-2"}>
         <div className="row p-2 text-center justify-content-center">
             <div className="col col-md-3">
@@ -30,7 +25,7 @@ const Whoiam = () => {
                                 <i className="fab fa-linkedin p-2 m-1 h3"></i>
                             </a>
 
-                            <span className="text-success" title={"email"} onClick={email}>
+                            <span className="text-success" title={"email"} onClick={Email}>
                                 <i id={"checked"} className={"far fa-envelope p-2 m-1 h3"}></i>
                             </span>
 
