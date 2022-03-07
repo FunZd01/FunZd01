@@ -1,5 +1,3 @@
-import * as url from "url";
-
 const Skills = () => (
     <div className="bg-white p-3 text-success text-center">
         <h1 className={"text-danger"} style={{textShadow: "1px 1px 3px grey"}}>
@@ -7,7 +5,7 @@ const Skills = () => (
         </h1>
         <div className="row justify-content-between">
             <div
-                className="col self-align-center text-center col-md-3 m-4 p-3 d-flex flex-column
+                className="col-11 self-align-center text-center col-md-3 m-4 p-3
                  position-static border border-warning bg-dark rounded">
                 <div className="row justify-content-between">
                     <div className="col-12">
@@ -31,7 +29,7 @@ const Skills = () => (
                 </div>
             </div>
             <div
-                className="col self-align-center text-center col-md-3 m-3 m-md-5 p-3 d-flex flex-column
+                className="col-11 self-align-center text-center col-md-3 m-3 p-3
                  position-static border border-warning bg-dark rounded">
                 <div className="row justify-content-between">
                     <div className="col-12">
@@ -55,7 +53,7 @@ const Skills = () => (
                 </div>
             </div>
             <div
-                className="col self-align-center text-center col-md-3 m-4 p-2 d-flex flex-column
+                className="col-11 self-align-center text-center col-md-3 m-4 p-2
                  position-static border border-warning bg-dark rounded">
                 <div className="row justify-content-between">
                     <div className="col-12">
