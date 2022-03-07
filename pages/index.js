@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Whoiam from "../components/whoiam";
 import Skills from "../components/Skills";
 import CvDownloader from "../components/CvDownloader";
+import Lang from "../components/lang";
 
 const Home = () => {
     return (
@@ -14,7 +15,8 @@ const Home = () => {
                       and lovers of challenges that require the use of ingenuity."/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <main className={"bg-success"}>
+            <main>
+                <Lang/>
                 <section>
                     <Whoiam/>
                     <Skills/>

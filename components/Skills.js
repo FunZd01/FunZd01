@@ -1,33 +1,82 @@
-const Skills = () => (
-    <div className="bg-white p-2 m-2 text-success">
-        <h1>Technical Skills</h1>
-        <div className="row">
+import * as url from "url";
 
-            <div className="col col-md-4  p-4 d-flex flex-column position-static">
-                <strong className="d-inline-block mb-2 text-primary">Web Development</strong>
-                <h3 className="mb-0">tecnologies</h3>
-                <div className="mb-1 text-muted">
-                    <i className="fas fa-cogs"/>
+const Skills = () => (
+    <div className="bg-white p-3 text-success text-center">
+        <h1 className={"text-danger"} style={{textShadow: "1px 1px 3px grey"}}>
+            Technical Skills
+        </h1>
+        <div className="row justify-content-between">
+            <div
+                className="col self-align-center text-center col-md-3 m-4 p-3 d-flex flex-column
+                 position-static border border-warning bg-dark rounded">
+                <div className="row justify-content-between">
+                    <div className="col-12">
+                        <img src="https://res.cloudinary.com/dzgnrldzj/image/upload/v1646636673/portfolio/x_rehvue.png"
+                             alt="tack" width={50}/>
+                    </div>
+                    <div className="col-12">
+                        <strong className="d-inline-block mb-2 text-success h4">
+                            Web Development
+                        </strong>
+                        <p className="p-2 text-white">
+                            tecnologies
+                            <span className="m-3">
+                        <i className="fas fa-cogs"/>
+                    </span>
+                        </p>
+                        <h5 className="card-text mb-5 p-3 border border-warning rounded-pill p-2">
+                            Python, React, Nodejs, Javascript, Html5, css3
+                        </h5>
+                    </div>
                 </div>
-                <p className="card-text mb-auto">
-                    Python, React, Nodejs, Javascript, Html5, css3
-                </p>
             </div>
-            <div className="col col-md-4  p-4 d-flex flex-column position-static">
-                <strong className="d-inline-block mb-2 text-primary">mobile Development</strong>
-                <h3 className="mb-0">tecnologies</h3>
-                <div className="mb-1 text-muted">
-                    <i className="fas fa-mobile-alt"/>
+            <div
+                className="col self-align-center text-center col-md-3 m-3 m-md-5 p-3 d-flex flex-column
+                 position-static border border-warning bg-dark rounded">
+                <div className="row justify-content-between">
+                    <div className="col-12">
+                        <img src="https://res.cloudinary.com/dzgnrldzj/image/upload/v1646636673/portfolio/x_rehvue.png"
+                             alt="tack" width={50}/>
+                    </div>
+                    <div className="col-12">
+                        <strong className="d-inline-block mb-2 text-success h4">
+                            mobile Development
+                        </strong>
+                        <p className="p-2 text-white">
+                            tecnologies
+                            <span className="m-3">
+                        <i className="fas fa-mobile-alt"/>
+                    </span>
+                        </p>
+                        <h5 className="card-text mb-5 p-2 border border-warning rounded-pill p-2">
+                            Flutter
+                        </h5>
+                    </div>
                 </div>
-                <p className="card-text mb-auto"> Flutter</p>
             </div>
-            <div className="col col-md-4  p-4 d-flex flex-column position-static">
-                <strong className="d-inline-block mb-2 text-primary">Databases</strong>
-                <h3 className="mb-0">tecnologies</h3>
-                <div className="mb-1 text-muted">
-                    <i className="fas fa-database"/>
+            <div
+                className="col self-align-center text-center col-md-3 m-4 p-2 d-flex flex-column
+                 position-static border border-warning bg-dark rounded">
+                <div className="row justify-content-between">
+                    <div className="col-12">
+                        <img src="https://res.cloudinary.com/dzgnrldzj/image/upload/v1646636673/portfolio/x_rehvue.png"
+                             alt="tack" width={50}/>
+                    </div>
+                    <div className="col-12">
+                        <strong className="d-inline-block mb-2 text-success h4">
+                            Databases
+                        </strong>
+                        <p className="p-2 text-white">
+                            tecnologies
+                            <span className="m-3">
+                        <i className="fas fa-database"/>
+                    </span>
+                        </p>
+                        <h5 className="card-text mb-5 p-2 border border-warning rounded-pill p-2">
+                            Postgres, Mysql, Mariadb
+                        </h5>
+                    </div>
                 </div>
-                <p className="card-text mb-auto">Postgres, Mysql, Mariadb</p>
             </div>
         </div>
 
