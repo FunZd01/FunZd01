@@ -25,10 +25,10 @@ const Email = () => {
     }
 
     swalWithBootstrapButtons.fire({
-        title: 'Contact Domingo Funez',
+        title: '<div class="p-2"><h1 class="">Contact Domingo Funez</h1>',
         html: `<input type="text" id="name" class="form-control" placeholder="Your name">
-  <input type="email" id="email" class="form-control" placeholder="eg: yourEmail@gmail.com" required><hr>
-  <textarea class="form-control" id="message" placeholder="your message"/>`,
+  <input type="email" id="email" class="form-control" placeholder="eg: yourEmail@gmail.com"><hr>
+  <textarea class="form-control" id="message" placeholder="your message"/></textarea></div>`,
         showCancelButton: true,
         confirmButtonText: 'send message',
         cancelButtonText: 'cancel',
