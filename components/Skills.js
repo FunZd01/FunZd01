@@ -1,7 +1,14 @@
-const Skills = () => (
-    <div className="bg-white p-3 text-success text-center">
+import {useContext} from "react";
+import {AppContext} from "../provider/provider";
+import en from './i18n/en'
+import es from './i18n/es'
+
+const Skills = () => {
+    const [state, setState] = useContext(AppContext)
+    const lang = (state.lang==null || state.lang=="en-US")? en : es
+    return <div className="bg-white p-3 text-success text-center">
         <h1 className={"text-danger"} style={{textShadow: "1px 1px 3px grey"}}>
-            Technical Skills
+            {lang.title}
         </h1>
         <div className="row justify-content-between">
             <div
@@ -14,10 +21,10 @@ const Skills = () => (
                     </div>
                     <div className="col-12">
                         <strong className="d-inline-block mb-2 text-success h4">
-                            Web Development
+                            { lang.card1_title }
                         </strong>
                         <p className="p-2 text-white">
-                            tecnologies
+                            {lang.card_sub}
                             <span className="m-3">
                         <i className="fas fa-cogs"/>
                     </span>
@@ -38,10 +45,10 @@ const Skills = () => (
                     </div>
                     <div className="col-12">
                         <strong className="d-inline-block mb-2 text-success h4">
-                            mobile Development
+                            { lang.card2_title }
                         </strong>
                         <p className="p-2 text-white">
-                            tecnologies
+                            { lang.card_sub }
                             <span className="m-3">
                         <i className="fas fa-mobile-alt"/>
                     </span>
@@ -62,10 +69,10 @@ const Skills = () => (
                     </div>
                     <div className="col-12">
                         <strong className="d-inline-block mb-2 text-success h4">
-                            Databases
+                            { lang.card3_title }
                         </strong>
                         <p className="p-2 text-white">
-                            tecnologies
+                            { lang.card_sub }
                             <span className="m-3">
                         <i className="fas fa-database"/>
                     </span>
@@ -79,6 +86,6 @@ const Skills = () => (
         </div>
 
     </div>
-)
+}
 
 export default Skills
