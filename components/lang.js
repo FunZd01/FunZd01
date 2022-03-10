@@ -11,15 +11,17 @@ const Lang = () => {
         setEn(!en)
     }
 
-    return <div className={"fixed-top bg-transparent mt-4 mr-2 text-end"}>
-        <p className={"text-success button"}
-           style={{textShadow: "1px 1px 3px teal, 0 0 1em black"}}>
-            <span onClick={changeLang}
-                  style={{cursor: "pointer"}}
-                  className={"border border-white p-2 m-2 decoration-none h4"}>
-                { en?"EN":"ES" }
-            </span>
-        </p>
+    return <div className={"row fixed-top bg-transparent mt-4"}>
+        <div className="col-6">
+             <img src="/favicon.ico" alt="logo" width={50} className={"bg-success rounded border border-danger"}/>
+        </div>
+        <div className="col-6 text-end">
+            <button onClick={changeLang}
+                style={{cursor: "pointer"}}
+                className={"bg-success text-black p-2 m-3 h4"}>
+            {en ? "EN" : "ES"}
+        </button>
+        </div>
     </div>
 }
 
