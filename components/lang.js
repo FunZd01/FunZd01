@@ -12,8 +12,8 @@ const Lang = () => {
     }
 
     return <div className={"row fixed-top bg-transparent mt-4"}>
-        <div className="col-6">
-             <img src="/favicon.ico" alt="logo" width={50} className={"bg-success rounded border border-danger"}/>
+        <div className="col-6 align-self-center">
+             <img src="/favicon.ico" alt="logo" width={40} className={"bg-success rounded border border-danger"}/>
         </div>
         <div className="col-6 text-end">
             <button onClick={changeLang}
