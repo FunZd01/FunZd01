@@ -8,15 +8,15 @@ const Whoiam = () => {
                      alt="profile image" width={"200"} className={"border border-danger rounded"}/>
             </div>
             <div className="col col-md-5 m-3 align-self-center">
-                <h3 style={{textShadow: "1px 1px 3px black"}}>
+                <h3>
                    <span className={"h1"}>
                        Domingo Funez
                    </span><br/>
                     <p className={"text-danger h5 mb-4"}>
                         fullstack developer
                     </p>
-                    <div className={"row justify-content-center h2"}>
-                        <div className={"col"}>
+                    <div className={"row justify-content-center h2 m-2 p-2"}>
+                        <div className={"col position-absolute"}>
                             <a title={"github"} href={"https://github.com/FunZd01"}
                                target={"blank"}>
                                 <i className="fab fa-github p-2 m-1"/>

@@ -4,10 +4,11 @@ import Skills from "../components/Skills";
 import CvDownloader from "../components/CvDownloader";
 import Lang from "../components/lang";
 import Provider from "../provider/provider";
+import Experience from "../components/Experience"
 
 const Home = () => {
     return (
-        <div>
+        <div  style={{textShadow: "1px 1px 3px black"}}>
             <Head>
                 <title>Domingo Funez</title>
                 <meta charSet={"UTF-8"}/>
@@ -22,6 +23,7 @@ const Home = () => {
                     <section>
                         <Whoiam/>
                         <Skills/>
+                        <Experience/>
                     </section>
                 </Provider>
                 <footer>
