@@ -7,7 +7,7 @@ const Skills = () => {
     const [state, setState] = useContext(AppContext)
     const lang = (state.lang == null || state.lang === "en-US") ? en : es
     return <div className="bg-white p-3 text-success text-center">
-        <h1 className={"text-danger"}>
+        <h1 style={{color: "red"}}>
             {lang.title}
         </h1>
         <div className="row justify-content-center">

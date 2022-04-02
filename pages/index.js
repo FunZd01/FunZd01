@@ -5,6 +5,7 @@ import CvDownloader from "../components/CvDownloader";
 import Lang from "../components/lang";
 import Provider from "../provider/provider";
 import Experience from "../components/Experience"
+import FooterC from "../components/footer";
 
 const Home = () => {
     return (
@@ -26,10 +27,11 @@ const Home = () => {
                         <Experience/>
                     </section>
                 </Provider>
-                <footer>
-                    <CvDownloader/>
-                </footer>
             </main>
+            <footer>
+                <CvDownloader/>
+                <FooterC/>
+            </footer>
         </div>
     )
 }

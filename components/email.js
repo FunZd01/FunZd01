@@ -6,7 +6,7 @@ const Email = () => {
 
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
-            confirmButton: 'btn btn-success m-2', cancelButton: 'btn btn-danger m-2',
+            confirmButton: 'btn btn-success m-2', cancelButton: 'btn btn-secondary m-2',
         }, buttonsStyling: false,
     })
     const sendEmail = (name, user, message) => {

@@ -9,31 +9,31 @@ const Whoiam = () => {
             </div>
             <div className="col col-md-5 m-3 align-self-center">
                 <h3>
-                   <span className={"h1"}>
+                   <span className={"h1 text-success"}>
                        Domingo Funez
                    </span><br/>
-                    <p className={"text-danger h5 mb-4"}>
+                    <p className={"h5 mb-4"}>
                         fullstack developer
                     </p>
                     <div className={"row justify-content-center h2 m-2 p-2"}>
-                        <div className={"col position-absolute"}>
+                        <div className={"col col-md-6 position-absolute"}>
                             <a title={"github"} href={"https://github.com/FunZd01"}
-                               target={"blank"}>
+                               target={"blank"} className={"text-muted"}>
                                 <i className="fab fa-github p-2 m-1"/>
                             </a>
                             <a title={"Linkedin"}
                                href={"https://www.linkedin.com/in/domingo-funez-6884a0207"}
-                               target={"blank"}>
+                               target={"blank"} className={"text-muted"}>
                                 <i className="fab fa-linkedin p-2 m-1"/>
                             </a>
                             <a title={"Email"}
                                href={"#"}
-                                onClick={Email}>
+                                onClick={Email} className={"text-muted"}>
                                 <i className={"far fa-envelope p-2 m-1"}/>
                             </a>
                             <a title={"Whatsapp"}
                                href={"https://api.whatsapp.com/send?phone=50584489179"}
-                               target={"blank"}>
+                               target={"blank"} className={"text-muted"}>
                                 <i className="fab fa-whatsapp p-2 m-1"/>
                             </a>
                         </div>
