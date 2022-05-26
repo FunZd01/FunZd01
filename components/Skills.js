@@ -6,8 +6,8 @@ import es from './i18n/es'
 const Skills = () => {
     const [state, setState] = useContext(AppContext)
     const lang = (state.lang == null || state.lang === "en-US") ? en : es
-    return <div className="bg-white p-3 text-success text-center">
-        <h1 style={{color: "red"}}>
+    return <div className="white p-3 text-success text-center">
+        <h1 className={"subtitle"}>
             {lang.title}
         </h1>
         <div className="row justify-content-center">
