@@ -1,6 +1,7 @@
 import es from './i18n/es'
 import en from './i18n/en'
 import {data} from '../experienceData'
+import Image from 'next/image'
 
 const Experience = () => {
     let maxData = false;
@@ -17,10 +18,10 @@ const Experience = () => {
                         <div className="col-md-3 col-12 p-2 m-2 rounded" key={i}>
                             <div className="card bg-dark rounded h-100 border border-warning">
                                 <div className={"p-2 m-1 rounded"}>
-                                    <img className="card-img-top align-self-center" src={img}
-                                         alt="project logo" style={{maxWidth: "100px"}}/>
+                                    <Image className="card-img-top align-self-center" src={img}
+                                         alt="project logo" width="100px" height="80px"/>
                                 </div>
-                                <h4 className="card-title text-success">{title}</h4>
+                                <h4 className="card-title green">{title}</h4>
                                 <p className={"card-subtitle text-white m-4"}>
                                     {duration}
                                     <span className={"fa fa-clock m-1"}/>
@@ -41,7 +42,7 @@ const Experience = () => {
         </div>
         <div>
             {
-                (maxData) ? <button className={"btn btn-success rounded-pill text-white w-100"}>
+                (maxData) ? <button className={"btn rounded text-white"} style={{background:"red"}}>
                         All Laboral Experience
                     </button>
                     : ""

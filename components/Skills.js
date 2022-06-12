@@ -6,7 +6,7 @@ import es from './i18n/es'
 const Skills = () => {
     const [state, setState] = useContext(AppContext)
     const lang = (state.lang == null || state.lang === "en-US") ? en : es
-    return <div className="white p-3 text-success text-center">
+    return <div className="white p-3 green text-center">
         <h1 className={"subtitle"}>
             {lang.title}
         </h1>
@@ -20,7 +20,7 @@ const Skills = () => {
                              alt="tack" width={50}/>
                     </div>
                     <div className="col-12">
-                        <strong className="d-inline-block mb-2 text-success h4">
+                        <strong className="d-inline-block mb-2 green h4">
                             {lang.card2_title}
                         </strong>
                         <p className="p-2 text-white">
@@ -44,7 +44,7 @@ const Skills = () => {
                              alt="tack" width={50}/>
                     </div>
                     <div className="col-12">
-                        <strong className="d-inline-block mb-2 text-success h4">
+                        <strong className="d-inline-block mb-2 green h4">
                             {lang.card1_title}
                         </strong>
                         <p className="p-2 text-white">
@@ -68,7 +68,7 @@ const Skills = () => {
                              alt="tack" width={50}/>
                     </div>
                     <div className="col-12">
-                        <strong className="d-inline-block mb-2 text-success h4">
+                        <strong className="d-inline-block mb-2 green h4">
                             {lang.card3_title}
                         </strong>
                         <p className="p-2 text-white">

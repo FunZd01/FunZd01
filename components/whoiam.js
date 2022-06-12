@@ -1,15 +1,18 @@
 import Email from "./email";
+import Image from 'next/image'
 
 const Whoiam = () => {
     return <div className={"bg-dark m-4"}>
         <div className="row p-2 text-center justify-content-center">
             <div className="col col-md-3">
-                <img src="https://res.cloudinary.com/dzgnrldzj/image/upload/v1644953326/develop/perf_cleanup_pot6le.jpg"
-                     alt="profile image" width={"200"} className={"border border-danger rounded"}/>
+                <Image
+                    src="https://res.cloudinary.com/dzgnrldzj/image/upload/v1644953326/develop/perf_cleanup_pot6le.jpg"
+                     alt="profile image" width={"200"} height={"266"} layout={"fixed"}
+                       className={"border border-dark rounded"}/>
             </div>
             <div className="col col-md-5 m-3 align-self-center">
                 <h3>
-                   <span className={"h1 text-success"}>
+                   <span className={"h1 green"}>
                        Domingo Funez
                    </span><br/>
                     <p className={"h5 mb-4 text-white"}>

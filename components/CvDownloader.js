@@ -11,9 +11,9 @@ const CvDownloader = () => {
         })
     }
 
-    return <div className={"fixed-bottom bg-transparent m-3 mb-5 text-end"}>
+    return <div className={"m-2"} style={{position:"fixed", bottom:"0", right:"0"}}>
         <button
-            className={"h1 bg-success p-1 rounded"}
+            className={"h2 bg-green p-2 rounded"}
             onClick={downloader}>
             <i className="fa fa-download"
                title={"download CV"}/>

@@ -11,10 +11,10 @@ const Lang = () => {
         setEn(!en)
     }
 
-    return <div className={"fixed-top bg-transparent mt-4 text-end"}>
+    return <div className={"m-2"} style={{position:"fixed", top:"0", right:"0"}}>
         <button onClick={changeLang}
                 style={{cursor: "pointer"}} title={"Change Language"}
-                className={"bg-success text-black p-2 m-3 h4"}>
+                className={"bg-green text-black h2"}>
             {en ? "EN" : "ES"}
         </button>
     </div>

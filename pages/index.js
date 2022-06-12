@@ -9,7 +9,7 @@ import FooterC from "../components/footer";
 
 const Home = () => {
     return (
-        <div  style={{textShadow: "1px 2px 4px black", zIndex: "10px"}}>
+        <div className={"position-relative"} style={{textShadow: "1px 2px 4px black"}}>
             <Head>
                 <title>Domingo Funez</title>
                 <meta charSet={"UTF-8"}/>
@@ -20,12 +20,11 @@ const Home = () => {
             </Head>
             <main>
                 <Provider>
-
                     <section>
                         <Whoiam/>
-                        <Lang/>
                         <Skills/>
                         <Experience/>
+                        <Lang/>
                     </section>
                 </Provider>
             </main>

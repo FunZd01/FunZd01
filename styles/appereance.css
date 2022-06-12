@@ -1,18 +1,26 @@
-.subtitle{
+.subtitle {
     color: red;
     text-shadow: 1px 2px 3px black;
 }
 
-.info:hover{
-    color: mediumspringgreen!important;
+.info:hover {
+    color: mediumspringgreen !important;
     font-weight: bolder;
     border-bottom: mediumspringgreen 2px solid;
 }
 
-.send{
-    background: mediumspringgreen!important;
+.send {
+    background: mediumspringgreen !important;
 }
 
-.white{
-    background: ghostwhite!important;
+.green {
+    color: mediumspringgreen !important;
+}
+
+.bg-green {
+    background: mediumspringgreen !important;
+}
+
+.white {
+    background: ghostwhite !important;
 }
